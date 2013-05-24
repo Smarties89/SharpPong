@@ -129,6 +129,8 @@ namespace SharpPong
 
         public bool CollidedWith(int x, int y)
         {
+           // if ((x >= xstart & x <= xend) & (y >= ystart & y <= yend))
+            //    throw new Exception();
             return (x >= xstart & x <= xend) & (y >= ystart & y <= yend);
         }
 
@@ -166,6 +168,7 @@ namespace SharpPong
         {
 
         }
+
     }
 
     class ControllableBoard : Board
